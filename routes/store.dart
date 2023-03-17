@@ -83,6 +83,7 @@ Future<Response> onRequest(RequestContext context) async {
     Env.radisHost,
     int.parse(Env.radisPort),
   );
+  await commander.send_object(['AUTH', Env.radisUser, Env.radisPass]);
   await commander.set(accessToken, payload).then(
         (value) => responseValue = value,
       );

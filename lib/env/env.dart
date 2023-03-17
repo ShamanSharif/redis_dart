@@ -8,4 +8,6 @@ abstract class Env {
   static const authToken = _Env.authToken;
   static const radisHost = _Env.radisHost;
   static const radisPort = _Env.radisPort;
+  static const radisUser = _Env.radisUser;
+  static const radisPass = _Env.radisPass;
 }
