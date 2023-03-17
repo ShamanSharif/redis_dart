@@ -1,2 +1,3 @@
-String authToken =
-    '0806cf55bc7b97de08c6b456fd042d95e6dd30ff9c9e4442367b40b92b469cc228be567f8994fbee91de11247b163c9285d4f652287d76d577b85899e87f486d';
+import 'package:tenant_auth_service/env/env.dart';
+
+String authToken = Env.authToken;
